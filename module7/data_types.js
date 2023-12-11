@@ -12,4 +12,4 @@ else {
     console.log(studentName, "is not Student");
 }
 
-
+// * I couldn’t apply the path with “true” and “false” because it’s not clear how to use them with these values
