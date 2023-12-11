@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 https://github.com/TanyaKozyr/JS/tree/main/module7
+=======
+https://github.com/TanyaKozyr/JS/tree/main/module7
+>>>>>>> 2c6e69f7e3473b12d3b9e5e8e9caec5c7cd8a4ba
