@@ -1,4 +1,4 @@
-
+//same functions!!!!
 
 let number
 number = "6"
