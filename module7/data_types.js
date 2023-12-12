@@ -1,15 +1,11 @@
 
-let studentName, age
 
-studentName = "Tanya Kozyreva";
-age = "35"
 
-if (studentName === "Tanya Kozyreva" && age === "35"){
-console.log(studentName, "is Student");
-}
+const studentName = "Tanya Kozyreva";
+const age = "35"
+const isStudent = true
 
-else {
-    console.log(studentName, "is not Student");
-}
+const checkIsStudent = (age, studentName)=>{
+    console.log(studentName, `"is Student" ${age}`)};
 
 
