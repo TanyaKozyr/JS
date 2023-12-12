@@ -1,7 +1,7 @@
 // let value
 // value = "23"
 // userInput = parseInt(value*2);
-
+//same function can be used
 let value
 value = "number23"
 userInput = parseInt(value*2);
