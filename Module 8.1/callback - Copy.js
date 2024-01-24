@@ -16,7 +16,7 @@ function multipl (x,y){
     const result = x*y
     return result
 }
-function divis (x,y){
+function divide (x,y){
     const result = x/y
     return result
 }
@@ -26,4 +26,4 @@ function divis (x,y){
 calculate(8,4,add(8,4))
 calculate(8,4,subtr(8,4))
 calculate(8,4,multipl(8,4))
-calculate(8,4,divis(8,4))
+calculate(8,4,divide(8,4))
