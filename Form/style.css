@@ -1,0 +1,56 @@
+body {
+
+
+margin-left: 30%;
+margin-right: 30%;
+width: 400px;
+height: auto;
+}
+
+form {
+    background-color: lightgrey;
+    
+}
+
+label {
+    font-size: large;
+    margin-left: 5px;
+}
+
+
+h1 {
+    text-align: center;
+ 
+
+
+}
+ .field {
+    margin-top: 10px;
+    height: 30px;
+    width: 300px;
+    border-radius: 10px/10px;
+    border: none;
+    padding-left: 15px;
+    font-family: inherit;
+    margin-left: 5px;
+   
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.82);
+
+
+}
+button {
+    align-items: center;
+    font-size: 30px;
+    padding: 10px 30px;
+    width: 370px;
+    height: 50px;
+    color: rgb(249, 238, 238);
+    background-color: black;
+    border-radius: 10px/10px ;
+    box-shadow: 2px 2px 5px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+
+
+
+}
