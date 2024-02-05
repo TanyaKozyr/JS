@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Student Registration Form</title>
+    <title>Form</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
@@ -12,49 +12,25 @@
       <h1>Student Registration Form</h1>  
 <div>
     <label for="Fname">First Name</label>
-    <input class="field" placeholder="Name" tabindex="1" id="Fname" required>
+    <input class="field" placeholder="Name" id="Fname">
 </div><br>
 <div>
     <label for="Lname">Last Name</label>
-    <input class="field" placeholder="Last Name" tabindex="2" name="name" id="Lname" required>
+    <input class="field" placeholder="Last Name" name="name" id="Lname">
 </div><br>
-<div>
-    <label for="courses">Courses</label>
-    <select class="field" tabindex="3" id="courses">
-        <option value="HTML">HTML</option>
-        <option value="CSS">CSS</option>
-        <option value="JavaScript">JavaScript</option>
 
-    </select>
-</div><br>
-<div>
-<label for="phone">Phone</label>
-<input class="field" tabindex="4" name="phone" id="phone">
- </div><br>
- <div>
-<label for="address">Current Address</label>
-<textarea class="field" placeholder="Current Address" tabindex="5"  name="address" id="address"></textarea> 
- </div><br>
- <div><label for="gender">Gender</label>
- <input tabindex="6" class="gender"  type="radio" name="gender" id="Male" >
- <label for="Male">Male</label>
- <input tabindex="7"  class="gender" type="radio" name="gender" id="Female" >
- <label for="Female">Female</label>
- <input tabindex="8" class="gender"  type="radio" name="gender" id="Other" >
- <label for="Other">Other</label>
-</div><br>
  <div>
     <label for="email">Email</label>
-    <input class="field" placeholder="Enter Email" tabindex="9" type="email" name="email" id="email">
+    <input class="field" placeholder="Enter Email" type="email" name="email" id="email">
  </div><br>
  <div>
 <label for="password">Password</label>
-<input class="field" placeholder="Enter Password" tabindex="10" type="password" name="userpass">
+<input class="field" placeholder="Enter Password" type="password" name="pass">
  </div><br>
  <div>
-    <button tabindex="11" type="submit">Register</button>
+    <button type="submit" id="elem">Submit</button>
  </div>
- 
+  
 
 
 
@@ -62,5 +38,32 @@
 
 
 </body>
+<script>
 
+const valid = true;
+
+if (document.getElementById('Fname').value.trim() ==='') {
+    alert('"First Name" must not be empty');
+    valid = false;
+}
+else if (document.getElementById('Lname').value.trim() ==='') {
+    alert('"Last Name" must not be empty');
+    valid = false;
+}
+else if (!document.getElementById('email').value.includes('@')) {
+    alert('Field does not follow a valid format');
+    valid = false;
+}
+else if (document.getElementById('pass').value.length < 10) {
+    alert('Password must be at least 10 characters');
+    valid = false;
+}
+ else  {alert ('Error!')};
+ 
+if (valid) {elem.addEventListener('click', ()=>alert('Success!'))}
+  else (alert ('Error!'))
+
+
+
+</script>
 </html>
