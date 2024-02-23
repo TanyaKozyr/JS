@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ul {
+        list-style-type: none;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" id="myInput" placeholder="Search for names.." />
+    <ul>
+      <li>Tanya</li>
+      <li>Sasha</li>
+      <li>Nilufar</li>
+      <li>Kostya</li>
+      <li>Yulia</li>
+    </ul>
+
+    <script>
+      const input = document.getElementById("myInput");
+      const list = document.querySelector("ul");
+
+      function searchName(item) {
+        return item.textContent
+          .toLowerCase()
+          .includes(input.value.toLowerCase());
+      }
+
+      function filter() {
+        const arr = Array.from(list.children);
+        const res = arr.filter(searchName).map((item) => item.textContent);
+        input.value = res;
+      }
+
+      input.addEventListener("input", filter);
+    </script>
+  </body>
+</html>
