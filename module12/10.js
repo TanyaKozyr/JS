@@ -3,9 +3,11 @@ function calc() {
   return function () {
     count++;
     console.log(count);
+    if (count === 6) {
+      clearInterval(intervalId);
+    }
   };
 }
 
 let a = calc();
-
-a();
+let intervalId = setInterval(a, 1000);
