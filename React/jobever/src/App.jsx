@@ -2,11 +2,13 @@ import "./App.css";
 import Header from "./components/Header";
 import Section from "./components/Main";
 import Footer from "./components/Footer";
+import Bar from "./components/AppBar";
 
 export default function App() {
   return (
     <>
-      <Header />
+    <Bar/>
+      
       <>
         <Section
           title={"About us"}
