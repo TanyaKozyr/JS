@@ -11,56 +11,65 @@
             width: auto;
             height: auto;
         }
-            .item-1, .item-2 {
+            .block-1, .block-2 {
             border: 2px solid black;
             padding: 20px;
             text-align: center;
             width: 50px;
             height: 100px;
             margin: 2rem;
-            ;
+            position: relative;
+
+           
         }
-        .item-22, .item-11 {
-            border: 2px solid black;
+        .block-info {
             visibility: hidden;
-            margin-top: 2rem;
+            text-align: center;
+       
         }
+      
 
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="item-1">Div 1
-            <div class="item-11">Red color</div>
+        <div class="block-1">Div 1
+            <div class="block-info">Red color</div>
         </div>
 
-        <div class="item-2">Div 2
-            <div class="item-22">Blue color</div>
+        <div class="block-2">Div 2
+            <div class="block-info">Blue color</div>
         </div>
 
     </div>
     <script>
-        const item1 = document.querySelector(".item-1");
-        const item2 = document.querySelector(".item-2");
-        const item11 = document.querySelector(".item-11");
-        const item22 = document.querySelector(".item-22");
+        const item1 = document.querySelector(".block-1");
+        const item2 = document.querySelector(".block-2");
+      
+       
 
-        item1.addEventListener('mouseover', function (){
-            item1.style.backgroundColor = 'red';
-            item11.style.visibility = "visible";
+        item1.addEventListener('mouseover', function (event){
+            const el = event.target; 
+            el.style.backgroundColor = 'red';
+            el.children[0].style.visibility = "visible";
 
         })
-        item1.addEventListener('mouseout', function (){
-            item1.style.backgroundColor = '';
-            item11.style.visibility = "hidden";
+        item1.addEventListener('mouseout', function (event){
+            const el = event.target; 
+            el.style.backgroundColor = '';
+            el.children[0].style.visibility = "hidden";
         })
-        item2.addEventListener('mouseover', function (){
-            item2.style.backgroundColor = 'blue';
-            item22.style.visibility = "visible";
+        item2.addEventListener('mouseover', function (event){
+            const el = event.target; 
+            el.style.backgroundColor = 'blue';
+            el.children[0].style.visibility = "visible";
+
         })
-        item2.addEventListener('mouseout', function (){
-            item2.style.backgroundColor = '';
-            item22.style.visibility = "hidden";
+        item2.addEventListener('mouseout', function (event){
+            const el = event.target; 
+            el.style.backgroundColor = '';
+            el.children[0].style.visibility = "hidden";
+
         })
 
     </script>
