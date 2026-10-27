@@ -1,0 +1,28 @@
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#countdown {
+  border: 2px solid black;
+  font-size: x-large;
+  width: 200px;
+  height: 50px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+#buttons-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#start,
+#stop,
+#reset {
+  margin: 5px 5px;
+  padding: 5px 15px;
+}
